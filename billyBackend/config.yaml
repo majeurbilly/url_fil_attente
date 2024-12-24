@@ -1,0 +1,10 @@
+server:
+  port: 8080
+  timeout: 30
+  maxItems: 10
+tracing:
+  enabled: false
+  endpoint: http://localhost:14268/api/traces
+logging:
+  level: info
+  encoding: json
