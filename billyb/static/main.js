@@ -37,7 +37,7 @@ async function fetchItems() {
         affichage.innerHTML = `
             <h3>Noms aux tableaux :</h3>
             <ol>
-                ${items.map((item) => `<li>Nom: ${item.value ?? 'Inconnu'}</li>`).join('')}
+                ${items.map((item) => `<li>${item.value ?? 'Inconnu'}</li>`).join('')}
             </ol>
         `;
     } catch (error) {
