@@ -5,30 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc410c56-19e4-42ea-a335-f0ce4e4c6e02" name="Changes" comment="dave help">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/url_fil_attente.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyBackend/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyBackend/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyBackend/assets/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyBackend/cmd/api/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyBackend/config.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyBackend/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyBackend/go.sum" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyBackend/internal/config/config.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyBackend/internal/config/config_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyBackend/internal/handlers/items.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyBackend/internal/handlers/items_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyBackend/internal/integration/api_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyBackend/internal/middleware/middleware.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyBackend/internal/middleware/middleware_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyBackend/internal/models/item.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyBackend/internal/models/item_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyBackend/main" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyBackend/pkg/logger/logger.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyBackend/pkg/tracer/tracer.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/billyb/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/billyb/static/main.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,27 +52,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "git-widget-placeholder": "main",
-    "go.import.settings.migrated": "true",
-    "go.sdk.automatically.set": "true",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/jefou/OneDrive/Desktop/billyb",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jefou/OneDrive/Desktop/billyb&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\jefou\OneDrive\Desktop\url_fil_attente\web" />
@@ -104,8 +82,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-gosdk-d297c17c1fbd-d82d926f19eb-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-243.22562.186" />
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-GO-243.22562.186" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-WS-243.22562.222" />
       </set>
     </attachedChunks>
   </component>
@@ -122,6 +99,7 @@
       <workItem from="1734986406783" duration="3000" />
       <workItem from="1734987655866" duration="364000" />
       <workItem from="1734992819022" duration="2208000" />
+      <workItem from="1735513327948" duration="10000" />
     </task>
     <task id="LOCAL-00001" summary="new started">
       <option name="closed" value="true" />
@@ -164,21 +142,5 @@
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
     <settings-migrated>true</settings-migrated>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/billyBackend/cmd/api/main.go</url>
-          <line>68</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/billyBackend/cmd/api/main.go</url>
-          <line>78</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

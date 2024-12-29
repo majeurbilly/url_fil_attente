@@ -2,6 +2,7 @@ const affichage = document.getElementById("affichage");
 const inputUser = document.getElementById("inputUser");
 const submitButton = document.querySelector("button");
 const url = "http://localhost:8080/api/v1/items";
+const deleteButton = document.getElementById("${item.id}");
 
 ///////main///////
 // Attachement de la fonction nommée au bouton de soumission
@@ -32,12 +33,12 @@ async function fetchItems() {
         console.log('Nombre d\'items reçus:', items.length);
 
 
-
         // Afficher la liste des noms reçu depuis le backend
         affichage.innerHTML = `
             <h3>Noms aux tableaux :</h3>
             <ol>
-                ${items.map((item) => `<li>${item.value ?? 'Inconnu'}</li>`).join('')}
+                <span>${items.map((item) => `<li>${item.value ?? 'Inconnu'}</span>
+                <button onclick="deleteItem('${item.id}')" id="${item.id}" type="button" class="btn btn-danger btn-sm">X</button></li>`).join('')}
             </ol>
         `;
     } catch (error) {
@@ -52,13 +53,13 @@ async function postName() {
 
     try {
         // clé/valeur - necessaire pour la requete post
-        const data = { value: name };
+        const data = {value: name};
         console.log('Données envoyées :', data);
 
         // requêtes réseau - dire quelles données j'envoie au serveur distant.
         const response = await fetch(url, {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(data)
         });
         console.log("Nom envoyé avec succès:", name);
@@ -70,6 +71,20 @@ async function postName() {
     } catch (error) {
         console.error('Erreur lors de l\'envoi du nom:', error);
         alert(`Erreur : ${error.message}`);
+    }
+}
+async function deleteItem(itemId) {
+    try {
+        const response = await fetch(`http://localhost:8080/api/v1/items/${itemId}`, {
+            method: 'DELETE',
+            headers: {'Content-Type': 'application/json'},
+        });
+        console.log(`Élément avec l'ID ${itemId} supprimé avec succès.`);
+        // Actualiser la liste après suppression
+        fetchItems();
+
+    } catch (error) {
+        console.error('Erreur lors de la suppression:', error);
     }
 }
 
