@@ -1,29 +1,37 @@
+// main.js
+
 const affichage = document.getElementById("affichage");
-const bouton = document.getElementById("bouton");
-const saisie = document.getElementById("saisie");
+let counter = 1;
+// async = manière d'executer du code pendant qu'une operation en attente
+async function fetchItems() {
+    try {
 
-// Appel API BillyB existante
-bouton.addEventListener("click", () => {
-    const nom = saisie.value;
-    if (nom) {
-        httpGet(`http://localhost:8080/api/items?nom=${encodeURIComponent(nom)}`);
-    } else {
-        affichage.innerHTML = "Veuillez entrer un nom.";
+        // requêtes réseau - demander des données à un serveur distant.
+        const response = await fetch('http://localhost:8080/api/v1/items');
+        console.log(response)
+
+        // donnée brute json - id/vlue/lenght
+        const data = await response.json();
+        console.log('Données reçues :', data);
+
+        // Initialisation des donnée recu, si vide tableau vide
+        const items = Array.isArray(data) ? data : data.items || [];
+        console.log(items.length)
+
+        // afficher la liste des nom recu dans le backend
+        affichage.innerHTML = `
+            <h3>Liste des Items :</h3>
+            <lo>
+                ${items.map(item => `<li>${counter++} - Nom: ${item.value}</li>`).join('')}
+            </lo>
+        `;
+
+
+    } catch (error) {
+        console.error('Erreur dans la récupération des items:', error);
+        affichage.innerHTML = `<p style="color: red;">Erreur : ${error.message}</p>`;
     }
-});
-
-function httpGet(theUrl) {
-    fetch(theUrl)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error("Erreur : " + response.statusText);
-            }
-            return response.text();
-        })
-        .then(data => {
-            affichage.innerHTML = data;
-        })
-        .catch(error => {
-            affichage.innerHTML = error;
-        });
 }
+
+// Appel de la fonction - s'execute a la volé
+fetchItems();
