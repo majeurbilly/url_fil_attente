@@ -35,7 +35,7 @@ async function fetchItems() {
 
         // Afficher la liste des noms reçu depuis le backend
         affichage.innerHTML = `
-            <h3>Liste des Items :</h3>
+            <h3>Noms aux tableaux :</h3>
             <ol>
                 ${items.map((item) => `<li>Nom: ${item.value ?? 'Inconnu'}</li>`).join('')}
             </ol>
