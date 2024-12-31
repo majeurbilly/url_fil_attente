@@ -8,9 +8,16 @@ const deleteButton = document.getElementById("${item.id}");
 // Attachement de la fonction nommée au bouton de soumission
 submitButton.onclick = handleSubmit;
 
+
+
 // Fonction nommée pour gérer la soumission
 function handleSubmit() {
     postName();
+    fetchItems();
+}
+function handleDelete(itemId) {
+    deleteItem(itemId);
+    // fetchItems();
 }
 
 // Charger les items à l'ouverture
@@ -38,7 +45,7 @@ async function fetchItems() {
             <h3>Noms aux tableaux :</h3>
             <ol>
                 <span>${items.map((item) => `<li>${item.value ?? 'Inconnu'}</span>
-                <button onclick="deleteItem('${item.id}')" id="${item.id}" type="button" class="btn btn-danger btn-sm">X</button></li>`).join('')}
+                <button onclick="handleDelete('${item.id}')" id="${item.id}" type="button" class="btn btn-danger btn-sm">X</button></li>`).join('')}
             </ol>
         `;
     } catch (error) {
@@ -65,26 +72,23 @@ async function postName() {
         console.log("Nom envoyé avec succès:", name);
         // Réinitialise le champ de saisie
         inputUser.value = '';
-        // Recharge la liste après envoi
-        fetchItems();
 
     } catch (error) {
         console.error('Erreur lors de l\'envoi du nom:', error);
         alert(`Erreur : ${error.message}`);
     }
+    fetchItems();
 }
 async function deleteItem(itemId) {
     try {
-        const response = await fetch(`http://localhost:8080/api/v1/items/${itemId}`, {
+        const response = await fetch(`http://localhost:8080/api/v1/item/${itemId}`, {
             method: 'DELETE',
             headers: {'Content-Type': 'application/json'},
         });
         console.log(`Élément avec l'ID ${itemId} supprimé avec succès.`);
-        // Actualiser la liste après suppression
-        fetchItems();
 
     } catch (error) {
         console.error('Erreur lors de la suppression:', error);
     }
+    fetchItems();
 }
-

@@ -51,6 +51,7 @@ func main() {
 	router.Use(middleware.RequestLogger(log))
 	router.Use(middleware.Recovery(log))
 	router.Use(middleware.CORSMiddleware())
+
 	itemHandler := handlers.NewItemHandler(log, &cfg.Server)
 
 	// Administration Routes
