@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6145812e-d4a2-47d4-942b-4a6b7b13a09f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../billyb/.idea/billyb.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../billyb/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../billyb/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../billyb/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../billyb/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../billyb/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../billyb/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../billyb/cmd/api/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../billyb/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../billyb/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../billyb/go.sum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../billyb/internal/config/config.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../billyb/internal/config/config_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../billyb/internal/handlers/items.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../billyb/internal/handlers/items_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../billyb/internal/integration/api_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../billyb/internal/middleware/middleware.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../billyb/internal/middleware/middleware_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../billyb/internal/models/item.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../billyb/internal/models/item_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../billyb/main" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../billyb/pkg/logger/logger.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../billyb/pkg/tracer/tracer.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../billyf/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../billyf/.idea/billyf.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../billyf/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../billyf/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../billyf/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../billyf/web/index.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" url="file://$PROJECT_DIR$/../../../../../../../Program Files/Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;majeurbilly&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/majeurbilly/url_fil_attente.git&quot;,
+    &quot;accountId&quot;: &quot;58337d1a-c68b-40d7-971c-c03150cb6d21&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2qy5IeoAGIrHC9Mxr0wk3ixcW9K" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jefou&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-gosdk-d297c17c1fbd-d82d926f19eb-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-243.22562.186" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-GO-243.22562.186" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+</project>
