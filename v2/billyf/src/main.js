@@ -10,14 +10,14 @@ submitButton.onclick = handleSubmit;
 fetchItems();
 
 // Gestion de la soumission
-function handleSubmit() {
+async function handleSubmit() {
     postName();
-    fetchItems();
 }
 
 // Gestion de suppression
-function handleDelete(itemId) {
-    deleteItem(itemId);
+async function handleDelete(item) {
+    await deleteItem(item);
+    fetchItems();
 }
 
 // Récupérer et afficher les items
@@ -29,9 +29,9 @@ async function fetchItems() {
         affichage.innerHTML = `
             <h3>Noms au tableau :</h3>
             <ol>
-                ${items.map((item, index) => `
+                ${items.map((item) => `
                     <li>${item ?? 'Inconnu'}
-                        <button onclick="handleDelete('${item}')" id="${index}" type="button" class="btn btn-danger btn-sm">X</button>
+                        <button onclick="deleteItem('${item}')" type="button" class="btn btn-danger btn-sm">X</button>
                     </li>
                 `).join('')}
             </ol>
@@ -65,12 +65,12 @@ async function postName() {
 }
 
 // Supprimer un élément
-async function deleteItem(itemId) {
+async function deleteItem(item) {
     try {
         await fetch(url, {
             method: 'DELETE',
             headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({ item: itemId })
+            body: JSON.stringify({ item })
         });
     } catch (error) {
         console.error('Erreur lors de la suppression:', error);
