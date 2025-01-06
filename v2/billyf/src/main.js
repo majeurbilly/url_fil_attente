@@ -31,10 +31,11 @@ async function fetchItems() {
             <ol>
                 ${items.map((item) => `
                     <li>${item ?? 'Inconnu'}
-                        <button onclick="deleteItem('${item}')" type="button" class="btn btn-danger btn-sm">X</button>
+                       <button onclick="deleteItem('${item}')" type="button" class="btn btn-danger btn-sm">X</button>
                     </li>
                 `).join('')}
             </ol>
+        
         `;
     } catch (error) {
         console.error('Erreur dans la récupération des items:', error);
