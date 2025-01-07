@@ -5,7 +5,6 @@ const url = "http://localhost:3000/api/list";
 
 // Bouton de soumission
 submitButton.onclick = handleSubmit;
-console.log(submitButton);
 
 // Charger les items à l'ouverture
 fetchItems();
