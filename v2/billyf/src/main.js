@@ -1,7 +1,7 @@
 const affichage = document.getElementById("affichage");
 const inputUser = document.getElementById("inputUser");
 const submitButton = document.querySelector("button");
-const url = "http://localhost:3000/api/list";
+const url = "https://url-fil-attente.vercel.app/";
 
 // Bouton de soumission
 submitButton.onclick = handleSubmit;
