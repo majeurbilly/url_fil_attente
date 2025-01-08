@@ -4,7 +4,7 @@ const affichage = document.getElementById("affichage");
 const inputUtilisateur = document.getElementById("inputUtilisateur");
 const boutonSoumettre = document.querySelector("button");
 const messageErreur = document.getElementById("messageErreur");
-const url = "https://IPPP/api/list";
+const url = "https://turbo-robot-qxr59vwwq9vf4xv9-3000.app.github.dev/api/list";
 
 
 addEventListener("DOMContentLoaded", VerificationConnextionBackend);
@@ -12,7 +12,7 @@ addEventListener("DOMContentLoaded", VerificationConnextionBackend);
 
 async function VerificationConnextionBackend() {
     try {
-        const response = await fetch("https://IPPP/api/list"); //todo: Remplacez par une ip valide
+        const response = await fetch("https://turbo-robot-qxr59vwwq9vf4xv9-3000.app.github.dev/api/list", {credentials: 'include'});
         if (response.ok) {
             console.log("Connexion au backend réussie.");
             return true;
@@ -78,7 +78,7 @@ async function GestionDelete(event) {
 // Charger et afficher les éléments
 async function ChargerElements() {
     try {
-        const reponse = await fetch(url);
+        const reponse = await fetch(url, {credentials: 'include'});
         console.log(reponse);
         const donnees = await reponse.json();
         console.log(donnees);
@@ -110,6 +110,7 @@ async function EnvoyerNom(nom) {
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(donnees),
+            credentials: 'include'
         });
         await ChargerElements();
     } catch (erreur) {
@@ -125,6 +126,7 @@ async function SupprimerElement(element) {
             method: "DELETE",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(donnees),
+            credentials: 'include'
         });
         await ChargerElements();
     } catch (erreur) {
