@@ -4,7 +4,7 @@ const affichage = document.getElementById("affichage");
 const inputUtilisateur = document.getElementById("inputUtilisateur");
 const boutonSoumettre = document.querySelector("button");
 const messageErreur = document.getElementById("messageErreur");
-const url = "https://10.100.2.130:3000/api/list";
+const url = "http://10.100.2.130:3000/api/list";
 
 
 addEventListener("DOMContentLoaded", VerificationConnextionBackend);
@@ -42,7 +42,7 @@ async function ChargerElements() {
         const reponse = await fetch(url, {credentials: 'include'});
         const donnees = await reponse.json();
         const elements = Array.isArray(donnees.data) ? donnees.data : [];
-        if (reponse.ok && elements.length > 0) {
+        if (reponse.ok) {
             affichage.innerHTML = `
             <h3>Noms au tableau :</h3>
             <ol>
