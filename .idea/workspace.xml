@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc410c56-19e4-42ea-a335-f0ce4e4c6e02" name="Changes" comment="dave help">
+    <list default="true" id="fc410c56-19e4-42ea-a335-f0ce4e4c6e02" name="Changes" comment="marge 🫴">
+      <change afterPath="$PROJECT_DIR$/TestUnitaire/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestUnitaire/scr/billyf/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestUnitaire/scr/billyf/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestUnitaire/scr/billyf/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestUnitaire/scr/billyf/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestUnitaire/scr/billyf/web/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v2/billyb/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/v2/billyb/next.config.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v2/billyb/pages/api/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/v2/billyb/pages/api/list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v2/billyf/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/v2/billyf/src/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +69,7 @@
     &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
     &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jefou/OneDrive/Desktop/billyb&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jefou/OneDrive/Desktop/url_fil_attente/TestUnitaire/scr&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -76,6 +79,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jefou\OneDrive\Desktop\url_fil_attente\TestUnitaire\scr" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\jefou\OneDrive\Desktop\url_fil_attente\web" />
       <recent name="C:\Users\jefou\OneDrive\Desktop\url_fil_attente\js" />
@@ -105,7 +111,8 @@
       <workItem from="1735582042150" duration="841000" />
       <workItem from="1736444950777" duration="304000" />
       <workItem from="1736445267951" duration="77000" />
-      <workItem from="1736445352967" duration="348000" />
+      <workItem from="1736445352967" duration="1639000" />
+      <workItem from="1736447013408" duration="3000" />
     </task>
     <task id="LOCAL-00001" summary="new started">
       <option name="closed" value="true" />
@@ -123,7 +130,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734949236710</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="marge 🫴">
+      <option name="closed" value="true" />
+      <created>1736445742757</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1736445742757</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,7 +158,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new started" />
     <MESSAGE value="dave help" />
-    <option name="LAST_COMMIT_MESSAGE" value="dave help" />
+    <MESSAGE value="marge " />
+    <option name="LAST_COMMIT_MESSAGE" value="marge " />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
