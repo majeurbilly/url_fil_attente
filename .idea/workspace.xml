@@ -6,36 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="fc410c56-19e4-42ea-a335-f0ce4e4c6e02" name="Changes" comment="dave help">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyb/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyb/.idea/billyb.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyb/.idea/jsLibraryMappings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyb/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyb/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyb/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyb/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyb/assets/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyb/billyf/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyb/billyf/.idea/billyf.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyb/billyf/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyb/billyf/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyb/billyf/src/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyb/billyf/web/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyb/cmd/api/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyb/config.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyb/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyb/go.sum" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyb/internal/config/config.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyb/internal/config/config_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyb/internal/handlers/items.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyb/internal/handlers/items_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyb/internal/integration/api_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyb/internal/middleware/middleware.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyb/internal/middleware/middleware_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyb/internal/models/item.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyb/internal/models/item_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyb/main" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyb/pkg/logger/logger.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billyb/pkg/tracer/tracer.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/v2/billyb/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/v2/billyb/next.config.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v2/billyb/pages/api/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/v2/billyb/pages/api/list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v2/billyf/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/v2/billyf/src/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +36,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/majeurbilly/url_fil_attente.git&quot;,
-    &quot;accountId&quot;: &quot;9514aa2a-2207-4f22-aac9-8de56e4409d8&quot;
+    &quot;accountId&quot;: &quot;22f9c1ca-0b8a-4b55-8fe7-e38014c71af4&quot;
   }
 }</component>
   <component name="GoLibraries">
@@ -130,6 +103,9 @@
       <workItem from="1734992819022" duration="2208000" />
       <workItem from="1735513327948" duration="10000" />
       <workItem from="1735582042150" duration="841000" />
+      <workItem from="1736444950777" duration="304000" />
+      <workItem from="1736445267951" duration="77000" />
+      <workItem from="1736445352967" duration="348000" />
     </task>
     <task id="LOCAL-00001" summary="new started">
       <option name="closed" value="true" />

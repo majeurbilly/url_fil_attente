@@ -5,7 +5,7 @@ const nextConfig = {
             source: "/api/list",
             headers: [
                 {key: "Access-Control-Allow-Credentials", value: "true"}, {
-                    key: "Access-Control-Allow-Origin", value: "*"
+                    key: "Access-Control-Allow-Origin", value: "https://10.100.2.130:3000/web/"
                 }, {
                     key: "Access-Control-Allow-Methods", value: "GET,DELETE,POST,OPTIONS"
                 }, {
