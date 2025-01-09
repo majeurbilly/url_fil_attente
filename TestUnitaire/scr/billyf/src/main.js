@@ -4,10 +4,13 @@ const affichage = document.getElementById("affichage");
 const inputUtilisateur = document.getElementById("inputUtilisateur");
 const boutonSoumettre = document.querySelector("button");
 const messageErreur = document.getElementById("messageErreur");
-const url = "https://10.100.2.130:3000/web/";
+const url = "https://10.100.2.130:3000/api/list";
 
 
 addEventListener("DOMContentLoaded", VerificationConnextionBackend);
+if (VerificationConnextionBackend){
+    ChargerElements();
+}
 
 
 async function VerificationConnextionBackend() {
@@ -30,7 +33,7 @@ async function VerificationConnextionBackend() {
 function DisplayError(string) {
     messageErreur.textContent += string;
     messageErreur.classList.remove("d-none");
-    messageErreur.textContent += " - ";
+    messageErreur.textContent += " + ";
 }
 
 // Charger et afficher les éléments
@@ -50,11 +53,7 @@ async function ChargerElements() {
                 `).join("")}
             </ol>
         `;
-        } else if (reponse.ok && elements.length === 0) {
-            <h3>Noms au tableau :</h3>
-            <h4>Tableau vide</h4>
         }
-
     } catch (erreur) {
         console.error("Erreur lors de la récupération des éléments :", erreur);
         affichage.innerHTML = `<p style="color: red;">Erreur : ${erreur.message}</p>`;
