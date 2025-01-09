@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6814ee7a-bbe9-4a7a-a747-effe8ff00d7e" name="Changes" comment="test a faire pour get">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scr/billyf/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/scr/billyf/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr/billyf/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/scr/billyf/web/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +65,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1736447080400</updated>
-      <workItem from="1736447081468" duration="2743000" />
+      <workItem from="1736447081468" duration="4308000" />
     </task>
     <task id="LOCAL-00001" summary="test a faire pour get">
       <option name="closed" value="true" />
@@ -75,7 +75,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736449535353</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="test a faire pour get">
+      <option name="closed" value="true" />
+      <created>1736450020196</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1736450020196</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
