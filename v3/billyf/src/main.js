@@ -11,7 +11,7 @@ const url = "http://10.100.2.130:3000/api/list";
 addEventListener("DOMContentLoaded", VerificationConnextionBackend);
 if (VerificationConnextionBackend) {
     ChargerElements();
-    if (inputUtilisateur.value !== null) {
+    if (inputUtilisateur.value != null) {
         boutonSoumettre.onclick = GererSoumission;
     }
     else if (messageErreur.value == null) {
