@@ -79,7 +79,8 @@ async function GererSoumission() {
     }
     // Add more input validation here, e.g., check for special characters, length limits
     try {
-        // ... (rest of the function)
+        await EnvoyerNom(nom);
+        inputUtilisateur.value = '';
     } catch (error) {
         console.error("Erreur lors de l'envoi du nom:", error);
         DisplayError("Une erreur s'est produite lors de l'envoi de votre nom. Veuillez réessayer plus tard.");
