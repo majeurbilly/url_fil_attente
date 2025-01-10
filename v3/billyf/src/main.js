@@ -1,23 +1,15 @@
 // Code amélioré
 
 const affichage = document.getElementById("affichage");
-const inputUtilisateur = document.getElementById("inputUtilisateur");
 const boutonSoumettre = document.querySelector("button");
 const messageErreur = document.getElementById("messageErreur");
 const url = "http://10.100.2.130:3000/api/list";
 
 
-
 addEventListener("DOMContentLoaded", VerificationConnextionBackend);
 if (VerificationConnextionBackend) {
     ChargerElements();
-    if (inputUtilisateur.value != null) {
-        boutonSoumettre.onclick = GererSoumission;
-    }
-    else if (messageErreur.value == null) {
-        DisplayError("inputUtilisateur est null")
-    }
-
+    boutonSoumettre.onclick = GererSoumission;
     document.addEventListener("DOMContentLoaded", ChargerElements);
     affichage.onclick = async function (event) {
         await GestionDelete(event);
@@ -75,20 +67,27 @@ async function ChargerElements() {
 
 // Gérer la soumission du formulaire
 async function GererSoumission() {
-    const nom = inputUtilisateur.value.trim();
-    console.log("nom :", nom);
-    if (!nom) {
-        DisplayError("Error veuillez entrer un nom")
-        return;
+    const inputUtilisateur = document.getElementById("inputUtilisateur");
+    if (inputUtilisateur) {
+        const nom = inputUtilisateur.value.trim();
+        console.log("nom :", nom);
+        if (!nom) {
+            DisplayError("Error veuillez entrer un nom")
+            return;
+        }
+        try {
+            await EnvoyerNom(nom);
+            inputUtilisateur.value = '';
+        } catch (erreur) {
+            console.error("Error lorsque le nom a été envoyé :", erreur);
+            alert(`Erreur : ${erreur.message}`);
+            DisplayError("Error lorsque le nom a été envoyé" + "nom ")
+        }
     }
-    try {
-        await EnvoyerNom(nom);
-        inputUtilisateur.value = '';
-    } catch (erreur) {
-        console.error("Error lorsque le nom a été envoyé :", erreur);
-        alert(`Erreur : ${erreur.message}`);
-        DisplayError("Error lorsque le nom a été envoyé" + "nom ")
+    else {
+        DisplayError("Erreur input :", inputUtilisateur.value);
     }
+
 }
 
 // Envoyer un nom au backend
