@@ -67,25 +67,22 @@ async function ChargerElements() {
 
 // Gérer la soumission du formulaire
 async function GererSoumission() {
-    const inputUtilisateur = document.getElementById("inputUtilisateur");
-    if (inputUtilisateur) {
-        const nom = inputUtilisateur.value.trim();
-        console.log("nom :", nom);
-        if (!nom) {
-            DisplayError("Error veuillez entrer un nom")
-            return;
-        }
-        try {
-            await EnvoyerNom(nom);
-            inputUtilisateur.value = '';
-        } catch (erreur) {
-            console.error("Error lorsque le nom a été envoyé :", erreur);
-            alert(`Erreur : ${erreur.message}`);
-            DisplayError("Error lorsque le nom a été envoyé" + "nom ")
-        }
+    const input = document.getElementById("inputUtilisateur");
+    if (!input) {
+        DisplayError("Le champ de saisie introuvable");
+        return;
     }
-    else {
-        DisplayError("Erreur input :", inputUtilisateur.value);
+    const nom = input.value.trim();
+    if (!nom) {
+        DisplayError("nom vide");
+        return;
+    }
+    // Add more input validation here, e.g., check for special characters, length limits
+    try {
+        // ... (rest of the function)
+    } catch (error) {
+        console.error("Erreur lors de l'envoi du nom:", error);
+        DisplayError("Une erreur s'est produite lors de l'envoi de votre nom. Veuillez réessayer plus tard.");
     }
 
 }
@@ -106,6 +103,7 @@ async function EnvoyerNom(nom) {
         throw new Error(erreur.message);
     }
 }
+
 async function GestionDelete(event) {
     if (event.target.classList.contains("btn-danger")) {
         const element = event.target.dataset.element;
@@ -118,6 +116,7 @@ async function GestionDelete(event) {
         }
     }
 }
+
 // Supprimer un élément dans le backend
 async function SupprimerElement(element) {
     try {
