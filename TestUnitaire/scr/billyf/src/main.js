@@ -10,6 +10,11 @@ const url = "http://10.100.2.130:3000/api/list";
 addEventListener("DOMContentLoaded", VerificationConnextionBackend);
 if (VerificationConnextionBackend) {
     ChargerElements();
+    boutonSoumettre.onclick = GererSoumission;
+    document.addEventListener("DOMContentLoaded", ChargerElements);
+    affichage.onclick = async function (event) {
+        await GestionDelete(event);
+    };
 }
 
 
@@ -86,6 +91,33 @@ async function EnvoyerNom(nom) {
         console.log(donnees);
         await fetch(url, {
             method: "POST",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify(donnees),
+            credentials: 'include'
+        });
+        await ChargerElements();
+    } catch (erreur) {
+        throw new Error(erreur.message);
+    }
+}
+async function GestionDelete(event) {
+    if (event.target.classList.contains("btn-danger")) {
+        const element = event.target.dataset.element;
+        try {
+            await SupprimerElement(element);
+            console.log("Element supprimer:", element);
+        } catch (erreur) {
+            console.error("Erreur lors de la suppression :", erreur);
+            DisplayError("Error lors de la suppression");
+        }
+    }
+}
+// Supprimer un élément dans le backend
+async function SupprimerElement(element) {
+    try {
+        const donnees = {item: element};
+        await fetch(url, {
+            method: "DELETE",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(donnees),
             credentials: 'include'
