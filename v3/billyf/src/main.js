@@ -7,10 +7,17 @@ const messageErreur = document.getElementById("messageErreur");
 const url = "http://10.100.2.130:3000/api/list";
 
 
+
 addEventListener("DOMContentLoaded", VerificationConnextionBackend);
 if (VerificationConnextionBackend) {
     ChargerElements();
-    boutonSoumettre.onclick = GererSoumission;
+    if (inputUtilisateur.value !== null) {
+        boutonSoumettre.onclick = GererSoumission;
+    }
+    else if (messageErreur.value == null) {
+        DisplayError("inputUtilisateur est null")
+    }
+
     document.addEventListener("DOMContentLoaded", ChargerElements);
     affichage.onclick = async function (event) {
         await GestionDelete(event);
