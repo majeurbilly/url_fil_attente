@@ -1,7 +1,7 @@
 // Code amélioré
 
 const affichage = document.getElementById("affichage");
-const inputUtilisateur = document.getElementById("inputUtilisateur");
+const inputUtilisateur = document.getElementById("inputUtilisateur").value;
 const boutonSoumettre = document.querySelector("button");
 const messageErreur = document.getElementById("messageErreur");
 const url = "http://10.100.2.130:3000/api/list";
@@ -68,7 +68,7 @@ async function ChargerElements() {
 
 // Gérer la soumission du formulaire
 async function GererSoumission() {
-    const nom = inputUtilisateur.value.trim();
+    const nom = inputUtilisateur.trim();
     console.log("nom :", nom);
     if (!nom) {
         DisplayError("Error veuillez entrer un nom")
