@@ -1,7 +1,7 @@
 // Code amélioré
 
 const affichage = document.getElementById("affichage");
-const boutonSoumettre = document.querySelector("button");
+const boutonSoumettre = document.getElementById("button");
 const messageErreur = document.getElementById("messageErreur");
 const url = "http://10.100.2.130:3000/api/list";
 
