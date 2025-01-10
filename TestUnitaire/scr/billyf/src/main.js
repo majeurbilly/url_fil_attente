@@ -8,7 +8,7 @@ const url = "http://10.100.2.130:3000/api/list";
 
 
 addEventListener("DOMContentLoaded", VerificationConnextionBackend);
-if (VerificationConnextionBackend){
+if (VerificationConnextionBackend) {
     ChargerElements();
 }
 
@@ -58,5 +58,40 @@ async function ChargerElements() {
         console.error("Erreur lors de la récupération des éléments :", erreur);
         affichage.innerHTML = `<p style="color: red;">Erreur : ${erreur.message}</p>`;
         DisplayError("Erreur lors de la récupération des éléments")
+    }
+}
+
+// Gérer la soumission du formulaire
+async function GererSoumission() {
+    const nom = inputUtilisateur.value.trim();
+    console.log("nom :", nom);
+    if (!nom) {
+        DisplayError("Error veuillez entrer un nom")
+        return;
+    }
+    try {
+        await EnvoyerNom(nom);
+        inputUtilisateur.value = '';
+    } catch (erreur) {
+        console.error("Error lorsque le nom a été envoyé :", erreur);
+        alert(`Erreur : ${erreur.message}`);
+        DisplayError("Error lorsque le nom a été envoyé" + "nom ")
+    }
+}
+
+// Envoyer un nom au backend
+async function EnvoyerNom(nom) {
+    try {
+        const donnees = {item: nom};
+        console.log(donnees);
+        await fetch(url, {
+            method: "POST",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify(donnees),
+            credentials: 'include'
+        });
+        await ChargerElements();
+    } catch (erreur) {
+        throw new Error(erreur.message);
     }
 }
